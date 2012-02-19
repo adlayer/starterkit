@@ -1,0 +1,16 @@
+h1 button {
+	float:right;
+}
+.focus {
+	background:white;
+	position:absolute;
+	width:100%;
+	opacity:0.5;
+	top:0px;
+}
+#focusTop{
+	height:0px;
+}
+#focusBottom{
+	height:100%;
+}

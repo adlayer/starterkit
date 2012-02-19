@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/styles.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -45,7 +46,7 @@
 
 	<div class="container">
 		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px"><a href="http://adlayer.com.br">Adlayer</a> starterkit</h1>
+			<h1 class="remove-bottom" style="margin-top: 40px"><a href="http://adlayer.com.br">Adlayer</a> starterkit<button id="focusMode">Focus mode</button></h1>
 			<h5>Versão 1.0</h5>
 			<hr />
 		</div>
@@ -117,7 +118,7 @@
 					</ul>
 				</li>
 				<li>
-					<button>Recarregue</button>
+					<button id="reload">Recarregue</button>
 					<strong> seu browser, e pronto.</strong>
 				</li>
 			</ol>
@@ -149,6 +150,9 @@
 	================================================== -->
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script src="javascripts/tabs.js"></script>
+	<script src="javascripts/main.js"></script>
+	<div id="focusTop" class="focus"></div>
+	<div id="focusBottom" class="focus"></div>
 
 <!-- End Document
 ================================================== -->
