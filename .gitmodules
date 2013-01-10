@@ -1,0 +1,3 @@
+[submodule "manuals"]
+	path = manuals
+	url = git@github.com:adlayer/manuals.git
