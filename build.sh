@@ -1,0 +1,1 @@
+mustache template.md > readme.md
