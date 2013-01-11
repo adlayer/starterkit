@@ -1,4 +1,4 @@
-# Primeiros passos
+# Primeiros passos com Adlayer
 Siga os passos abaixo para vincular publicidade em seu site com Adlayer.
 
 1. Adicione um site
