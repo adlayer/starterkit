@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>ACE in Action</title>
+	
+		<style type="text/css" media="screen">
+	    	#editor { 
+		        position: fixed;
+		        bottom: 0;
+		        right: 0;
+				width:50%;
+				height:100%;
+		    }
+			#preview {
+				color:#666;
+				font-family: arial, helvetica;
+				position:absolute;
+				left:0;
+				width:50%;
+			}
+			#preview ol > li {
+				padding:14px;
+				border-bottom:1px solid red;
+			}
+		</style>
+	
+	</head>
+<body>
+	
+<div id="preview">
+
+	<h1 id="comeando-com-adlayer">Começando com Adlayer</h1>
+
+	<h2>Clique com o direito <a href="#">neste link</a> e salve a imagem de destino para usa-la como peça publicitária.</h2>
+
+	<h3>Faça <a href="http://adlayer.com.br/login">login</a> em sua conta Adlayer e siga os passos abaixo:</h3>
+
+	<ol>
+	  <li>Adicionando um site
+		<br />
+		<img src="images/1.png" />
+	    <ul>
+	      <li>
+			Adicione um site com o nome <strong>“Starterkit”</strong> e no campo domínio preencha com <strong>“adlayer.github.com”</strong>.
+			<img src="images/2.png" />
+			</li>
+	    </ul>
+	  </li>
+	  <li>Integrando a página
+		<br />
+		<img src="images/3.png" />
+	    <ul>
+	      <li>
+			Dentro do site criado (starterkit), adicione uma página chamada <strong>“Home”</strong>
+			<img src="images/4.png" />
+		  </li>
+	      <li>Copie o código de integração da página e cole no editor ao lado na linha <a class="go-to-line" href="#">1</a>
+		    <img src="images/5.png" />
+		  </li>
+	    </ul>
+	  </li>
+	  <li>Integrando um espaço publicitário
+		<img src="images/6.png" />
+	    <ul>
+	      <li>De volta ao Adlayer, adicione um “espaço” com o nome “fullbanner” (dentro da página Home).
+			<br />
+			 <img src="images/7.png" />
+		  </li>
+	      <li>Copie o código do espaço (passando o mouse sobre o nome “fullbanner”).
+    		<img src="images/8.png" />
+		  </li>
+	      <li>Cole no editor ao lado na página <a class="go-to-line" href="#">76</a></li>
+	    </ul>
+	  </li>
+	  <li>Vinculando uma campanha
+	    <ul>
+	      <li>Encontre e selecione a aba “Campanhas” dentro do site</li>
+	      <li>Clique em “vincular campanha” para criar uma nova campanha
+			<img src="images/9.png" />
+		  </li>
+	      <li>Dê o nome de “Campanha de teste”</li>
+	      <li>Adicione “Adlayer” como novo anunciante
+    		<img src="images/10.png" />
+		  </li>
+	      <li>Certifique-se que o site “Starterkit” esta marcado na segunda tela.
+    		<img src="images/11.png" />
+		  </li>
+	    </ul>
+	  </li>
+	  <li>Adicionando uma peça publicitária
+   		<img src="images/12.png" />
+	    <ul>
+	      <li>Adicione uma nova peça na campanha com o nome “Fullbanner imagem”</li>
+	      <li>Vincule a peça no espaço “Fullbanner” da página “Home” do site “Starterkit”.
+	   		<img src="images/13.png" />
+		  </li>
+	    </ul>
+	  </li>
+	</ol>
+	
+	<button id="test">Testar</button>
+		
+	A peça deve aparecer aqui:
+	<!-- Insira o código do espaço na linha seguinte -->
+	
+</div>
+
+<div id="editor">Aguarde</div>
+
+<script src="http://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>    
+<script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/html");
+	editor.setValue($('#preview').html());
+	
+	$('.go-to-line').click(function(e){
+		var line = parseInt($(this).text());
+		editor.gotoLine(line);
+		e.preventDefault();
+	})
+	
+	$('#test').click(function(){
+		$('#preview').html(editor.getValue());
+	});
+</script>
+</body>
+</html>
