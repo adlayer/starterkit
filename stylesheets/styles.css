@@ -1,16 +1,117 @@
-h1 button {
-	float:right;
+* {
+	margin: 0; 
+	padding:0px;
 }
-.focus {
-	background:white;
-	position:absolute;
+button {
+	font-family:"Proxima Nova Bold", 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	color:#fff;
+	display:block;
+	font-size:20px;
+	background:orange;
+	height:30px;
+	width:50%;
+}
+header {
+	background: #C05B26;
+       position: fixed;
 	width:100%;
-	opacity:0.5;
-	top:0px;
+	height:84px;
+	z-index:99999;
 }
-#focusTop{
-	height:0px;
-}
-#focusBottom{
+header img {margin:8px;}
+#editor {
+       position: fixed;
+       top: 84px;
+       right: 0px;
+	width:500px;
 	height:100%;
+	border-right:3px solid black;
+   }
+
+#preview {
+	color:#666;
+	font-family: arial, helvetica;
+	position:absolute;
+	top:84px;
+	left:28px;
+	width:50%;
 }
+
+a {
+	color:orange;
+	font-family:"Proxima Nova Bold", 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+img {
+	display:block;
+	clear:both;
+}
+h1 { 
+	color:#353D3C;
+	font-family:"Proxima Nova Extra Bold", 'Helvetica Neue', Arial, Helvetica, sans-serif; 
+	font-weight:800; 
+	font-style:normal;
+	text-transform: uppercase;
+	letter-spacing:-1px;
+	line-height:23px;
+	font-size:44px;
+	margin-top:28px;
+}
+h2 {
+	font-family:"Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif; 
+	font-size-adjust:0.488; 
+	font-weight:200; 
+	font-style:normal;
+	line-height:25px;
+	margin-top:14px;
+}
+h3 { 
+	font-family:"Proxima Nova Regular", 'Helvetica Neue', Arial, Helvetica, sans-serif; 
+	font-weight:normal; 
+	font-style:normal;
+	line-height:-30px;
+	letter-spacing:-1px;
+	margin-top:28px;
+}
+strong { 
+	font-family:"Proxima Nova Bold", 'Helvetica Neue', Arial, Helvetica, sans-serif; 
+	font-size-adjust:0.488; 
+	font-weight:bold; 
+	font-style:normal; 
+}
+
+ol {margin-top:28px;}
+ul,ol {
+	font-family:"Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif; 
+	font-size-adjust:0.488; 
+	font-weight:200; 
+	font-style:normal;
+}
+li {
+	padding:14px;
+	text-align:left;
+	margin-right:14px;
+	font-size:16px;
+	letter-spacing:0px;
+	text-transform:none;
+}
+li a {
+	background: orange;
+	color:#fff;
+	text-decoration:none;
+}
+ol > li {
+	color:#353D3C;
+	font-family:"Proxima Nova Extra Bold", 'Helvetica Neue', Arial, Helvetica, sans-serif; 
+	font-weight:800; 
+	font-style:normal;
+	font-size:21px;
+	text-transform: uppercase;
+	letter-spacing:-1px;
+	margin:28px;
+}
+	/**
+div { font-family:"Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size-adjust:0.488; font-weight:200; font-style:normal; }
+div { font-family:"Proxima Nova Regular", 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size-adjust:0.488; font-weight:normal; font-style:normal; }
+
+div { font-family:"Proxima Nova Bold", 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size-adjust:0.488; font-weight:bold; font-style:normal; }
+**/
