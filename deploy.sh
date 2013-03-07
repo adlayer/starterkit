@@ -1,0 +1,1 @@
+s3cmd put --acl-public --recursive images ace editor.html index.html javascripts stylesheets s3://start.adlayerjavascriptsdk.com
